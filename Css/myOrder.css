@@ -1,0 +1,128 @@
+#myOrder {
+  background-color: #fff;
+  padding: 80px 0;
+}
+
+.order-item {
+  display: flex;
+  align-items: flex-start; /* Update align-items property */
+  border: 1px solid #eaeaea;
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.order-item-image img {
+  width: 180px;
+  height: 155px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.order-item-details {
+  flex: 1;
+  margin-left: 10px;
+  width: 50%;
+  align-self: flex-start; /* Add align-self property */
+}
+
+.order-item-details h3 {
+  margin-top: 0;
+  margin-bottom: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.order-item-status {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 50%;
+  margin-top: 27px;
+  align-self: flex-start; /* Add align-self property */
+}
+
+.order-item-status p {
+}
+
+.order-item-actions {
+  margin-left: auto;
+  margin-top: auto;
+  display: flex; /* Add display property */
+  align-items: center; /* Add align-items property to vertically center the items */
+}
+
+.order-item-actions button {
+  margin-right: 10px; /* Add margin-right to create spacing between buttons */
+}
+
+
+.btn {
+  padding: 8px 16px;
+  background-color: #ff5c39;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-cancel {
+  background-color: #dc3545;
+}
+
+.btn-cancel:hover {
+  background-color: #c82333;
+}
+
+.btn-pay {
+  background-color: #4CAF50;
+}
+
+.btn-pay:hover {
+  background-color: #c82333;
+}
+
+#no-orders {
+  background-color: #f5f5f5;
+  padding: 50px;
+  text-align: center;
+}
+
+.no-orders-content img {
+  width: 200px; /* Adjust the width as needed */
+}
+
+.no-orders-content p {
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+/* Responsive Styles */
+
+@media (max-width: 768px) {
+  .order-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .order-item-image img {
+    width: 100%;
+    height: auto;
+  }
+
+  .order-item-details {
+    margin-top: 10px;
+    margin-left: 0;
+  }
+
+  .order-item-status {
+  margin-top: 0px;
+  
+  }
+
+  .order-item-actions {
+    margin-left: auto;
+    margin-top: 10px;
+  }
+}

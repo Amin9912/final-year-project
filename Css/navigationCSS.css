@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  /*outline: 1px solid red;*/
+}
+
+html {
+    -webkit-font-smoothing: antialiased;
+    font-size: initial !important;
+}
+
+a{
+  text-decoration: none;
+}
+
+.center {
+  margin: auto;
+  width: fit-content;
+  padding: 10px;
+}
+
+body{
+  font-family: 'Helvetica Neue', sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+html, body {
+  height: 100%;
+}
+
+
+main{
+  width: 100%;
+  background-color: #fff;
+/*  padding-top: 70px;*/
+  padding-bottom: 100px;
+  flex: 1 0 auto;
+}
+
+.header {
+  height: 70px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 100px;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  backdrop-filter: blur(10px);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  z-index: 100;
+}
+
+.header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.4),
+    transparent
+  );
+  transition: 1s;
+}
+
+.header:hover::before {
+  left: 100%;
+}
+
+.logo {
+  color: #fff;
+  font-size: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  cursor: default;
+}
+
+/* Disable hover effect for .logo */
+.logo:hover {
+  /* Set the properties to the default values */
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Override .navbar styles */
+.navbar {
+  min-height: initial !important;
+  margin-bottom: initial !important;
+  border: none !important;
+  font-size: initial !important;
+  line-height: initial !important;
+  padding: 0;
+}
+
+
+.navbar .custom-link {
+  color: #fff;
+  font-size: 18px;
+  text-decoration: none;
+  margin-left: 35px;
+  line-height: initial;
+  row-gap: initial;
+  transition: 0.3s;
+}
+
+.navbar .custom-link:hover {
+  color: #f00;
+}
+
+#menu-icon {
+  font-size: 36px;
+  color: #fff;
+  display: none;
+}
+
+/* BREAKPOINTS */
+@media (max-width: 992px) {
+  .header {
+    padding: 1.25rem 4%;
+  }
+}
+
+@media (max-width: 768px) {
+  #menu-icon {
+    display: block;
+  }
+
+  .navbar {
+    position: fixed;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 0.5rem 4%;
+    display: none;
+  }
+
+  .navbar.active {
+    display: block;
+  }
+
+  .navbar .custom-link {
+    display: block;
+    margin: 1.5rem 0;
+  }
+
+  .nav-bg {
+    position: fixed;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    height: 380px;
+    background: rgba(0, 0, 0, 0.4);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    z-index: 99;
+    display: none;
+  }
+
+  .nav-bg.active {
+    display: block;
+  }
+}
+
+/* Set footer styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+footer p {
+  font-size: 14px;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.social-icons {
+  margin-bottom: 10px;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin-right: 10px;
+  color: #fff;
+  font-size: 30px;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:last-child {
+  margin-right: 0;
+}
+
+/* Different colors for each icon */
+.social-icons a:hover {
+  color: #1877f2; /* Facebook blue on hover */
+}
+
+.social-icons a:hover:nth-child(2) {
+  color: #db4437; /* Google red on hover */
+}
+
+.social-icons a:hover:nth-child(3) {
+  color: #25d366; /* WhatsApp green on hover */
+}
+
+.social-icons a:hover:nth-child(4) {
+  color: #e4405f; /* Instagram pink on hover */
+}
+
+.social-icons a:hover:nth-child(5) {
+  color: #000; /* TikTok black on hover */
+}
+
+.red-line {
+    color: #ff3333;
+    font-size: 12px;
+}

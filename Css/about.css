@@ -1,0 +1,146 @@
+#map-location {
+  padding: 60px 0;
+  background-color: #fff;
+}
+
+.map-container {
+  margin-bottom: 20px;
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 400px;
+}
+
+.address-description {
+  /* Add any specific styles for the address description */
+}
+
+.address-description h2 {
+  margin-bottom: 10px;
+}
+
+.address-description p {
+  color: #666;
+  margin-bottom: 0;
+}
+
+.full-image-section {
+  position: relative;
+  height: 100vh;
+  background-image: url('path/to/your/image.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.image-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
+
+.image-overlay h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.image-overlay p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ff5c39;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #ff3d00;
+}
+
+.about-section {
+  padding: 80px 0;
+  background-color: #f9f9f9;
+}
+
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.about-image {
+  flex: 1;
+  order: 2;
+}
+
+.title-and-text {
+  flex: 1;
+  order: 1;
+  padding-right: 10px;
+}
+
+.about-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.about-text {
+  margin-bottom: 20px;
+}
+
+.about-text h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.about-text p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+/* Responsive Styles */
+
+@media (max-width: 768px) {
+  .address-description h2 {
+    font-size: 20px;
+  }
+
+  .address-description p {
+    font-size: 16px;
+  }
+
+  .map-container iframe {
+    height: 300px;
+  }
+
+  .about-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-image {
+    order: 1;
+    margin-bottom: 20px;
+  }
+
+  .title-and-text {
+    order: 2;
+    text-align: left;
+  }
+
+  .about-text {
+    text-align: left;
+    margin-right: 0;
+  }
+}
